@@ -22,7 +22,8 @@ const LoginPage = () => {
   });
 
   useEffect(() => {
-    if (data) {
+    if (data?.token) {
+      console.log(data);
       nav("/home");
     }
   }, [data]);

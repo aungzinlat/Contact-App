@@ -26,8 +26,8 @@ const RegisterPage = () => {
   };
 
   useEffect(() => {
-    if (data) {
-      console.log(data);
+    if (data?.success) {
+      console.log(data.success);
       nav("/");
     }
   }, [data]);

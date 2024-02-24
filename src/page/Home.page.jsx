@@ -16,7 +16,7 @@ const HomePage = () => {
   // }, []);
 
   return (
-    <PreventComponents fail={"/"} check={!localStorage.getItem("auth")}>
+    <PreventComponents check={!localStorage.getItem("auth")} path={"/"}>
       <div className="container mx-auto h-screen">
         <div className="w-[80%] mx-auto h-full">
           <NavBarComponents />

@@ -4,8 +4,8 @@ export const Register = async (formData) => {
   try {
     const res = await api.post("/register", formData);
     console.log(res);
-    if (res.data) {
-      return res.data;
+    if (res) {
+      return res;
     } else {
       console.log(res.error);
     }
